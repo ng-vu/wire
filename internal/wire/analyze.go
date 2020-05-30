@@ -20,6 +20,7 @@ import (
 	"go/ast"
 	"go/token"
 	"go/types"
+	"path"
 	"sort"
 	"strings"
 
@@ -271,7 +272,7 @@ func verifyArgsUsed(set *ProviderSet, used []*providerSetSrc) []error {
 			if imp.VarName == "" {
 				errs = append(errs, errors.New("unused provider set"))
 			} else {
-				errs = append(errs, fmt.Errorf("unused provider set %q", imp.VarName))
+				errs = append(errs, fmt.Errorf("unused provider set %q", path.Base(imp.PkgPath)+"."+imp.VarName))
 			}
 		}
 	}

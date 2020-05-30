@@ -1,4 +1,4 @@
-example.com/foo/wire.go:x:y: inject injectFooBar: unused provider set "unusedSet"
+example.com/foo/wire.go:x:y: inject injectFooBar: unused provider set "main.unusedSet"
 
 example.com/foo/wire.go:x:y: inject injectFooBar: unused provider "main.provideUnused"
 
