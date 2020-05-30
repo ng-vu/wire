@@ -1,4 +1,4 @@
-module github.com/google/wire
+module github.com/ng-vu/wire
 
 go 1.12
 
