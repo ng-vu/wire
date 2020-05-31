@@ -10,7 +10,7 @@ jobs:
 
   build:
     name: Build
-    runs-on: [self-host, macOS, all]
+    runs-on: [self-hosted, macOS, all]
     steps:
 
     - name: Set up Go 1.x
