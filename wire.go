@@ -25,6 +25,8 @@
 // instantiate any needed types.
 package wire
 
+// test
+
 // ProviderSet is a marker type that collects a group of providers.
 type ProviderSet struct{}
 
